@@ -40,129 +40,129 @@ To be able to deploy this MCP Server and use it in Microsoft Copilot Studio, you
 
 1. Go to `portal.azure.com`
 
-    ![Azure Portal](/assets/azureportal.png)
+    ![Azure Portal](./assets/azureportal.png)
 
 1. Hover over the `Resource groups` tab and select `Create`
 
-    ![Resource Group](/assets/selectResourceGroup.png)
+    ![Resource Group](./assets/selectResourceGroup.png)
 
 1. Click the `Subscription` dropdown and select your subscription from the list
 
-    ![Select Subscription](/assets/selectSubscription.png)
+    ![Select Subscription](./assets/selectSubscription.png)
 
 1. Click in the `Resource group` name text box and type a resource group name such as "jokesgrp"
 
-    ![Resource Group Name](/assets/resourcegrpname.png)
+    ![Resource Group Name](./assets/resourcegrpname.png)
 
 1. Select the `Region` dropdown choose the region closest to you
 
-    ![Resource Group Region](/assets/resourcegrpregion.png)
+    ![Resource Group Region](./assets/resourcegrpregion.png)
 
 1. Click `Review + create`
 
-    ![Review and create](/assets/resourcegrpreview.png)
+    ![Review and create](./assets/resourcegrpreview.png)
 
 1. Click `Create`
 
-    ![Create](/assets/resourcegrpcreate.png)
+    ![Create](./assets/resourcegrpcreate.png)
 
 1. Select `Go to resource group`
 
-    ![Go to resource](/assets/gotoresource.png)
+    ![Go to resource](./assets/gotoresource.png)
 
 1. Select `Create`
 
-    ![Create](/assets/inresourcegrpcreate.png)
+    ![Create](./assets/inresourcegrpcreate.png)
 
 1. Click into the `search box`
 
-    ![Search](/assets/searchmarketplace.png)
+    ![Search](./assets/searchmarketplace.png)
 
 1. Type `web app`
 
 1. Select the `Create button` in the Web App search result
 
-    ![Search Results](/assets/createwebapp1.png)
+    ![Search Results](./assets/createwebapp1.png)
 
 1. Select `Web App`
 
-    ![Create Web App](/assets/createwebapp2.png)
+    ![Create Web App](./assets/createwebapp2.png)
 
 1. Select the `Name` text input and put in a name for the web app, such as "wegotjokes"
 
-    ![Web App Name](/assets/webappname.png)
+    ![Web App Name](./assets/webappname.png)
 
 1. Select the `Runtime stack` dropdown and choose `Node 22 LTS` 
 
-    ![Web App Runtime](/assets/selectruntime.png)
+    ![Web App Runtime](./assets/selectruntime.png)
 
 1. Select the `Region` dropdown and choose the region closest to you
 
-    ![Region](/assets/webappselectregion.png)
+    ![Region](./assets/webappselectregion.png)
 
 1. Click `Review + create`
 
-    ![Review](/assets/webappreview.png)
+    ![Review](./assets/webappreview.png)
 
 1. Click `Create`
 
-    ![Create](/assets/webappcreate.png)
+    ![Create](./assets/webappcreate.png)
 
 1. Click `Refresh` to update your deployment progress
 
-    ![Refresh](/assets/webapprefresh.png)
+    ![Refresh](./assets/webapprefresh.png)
 
 1. Once deployment is complete, select `Go to resource`
 
-    ![Go to resource](/assets/webappgotoresource.png)
+    ![Go to resource](./assets/webappgotoresource.png)
 
 1. Expand the `Deployment` tab
 
-    ![Deployment tab](/assets/webappdeployment.png)
+    ![Deployment tab](./assets/webappdeployment.png)
 
 1. Click `Deployment Center`
 
-    ![Deployment center](/assets/webappdeployctr.png)
+    ![Deployment center](./assets/webappdeployctr.png)
 
 1. Click the `Source` dropdown and select `GitHub` 
 
-    ![Choose source](/assets/webappsource.png)
+    ![Choose source](./assets/webappsource.png)
 
 1. Select `Authorize`
 
-    ![Authorize](/assets/deployauthorize.png)
+    ![Authorize](./assets/deployauthorize.png)
 
 1. Select `Continue`
 
-    ![Continue](/assets/githubauthcontinue.png)
+    ![Continue](./assets/githubauthcontinue.png)
 
 1. Select `Authorize AzureAppService`
 
-    ![Authorize](/assets/githubauthappservice.png)
+    ![Authorize](./assets/githubauthappservice.png)
 
 1. Click the `Organization` dropdown and choose your organization
 
-    ![Org Selection](/assets/githuborg.png)
+    ![Org Selection](./assets/githuborg.png)
 
 1. Click on the `Repository` dropdown and choose the GitHub repository you created [earlier](#create-a-new-github-repository-based-on-the-template) from the list
 
-    ![Repo Selection](/assets/githubrepo.png)
+    ![Repo Selection](./assets/githubrepo.png)
 
 1. Click the `Branch` dropdown and choose your branch
 
-    ![Select Branch](/assets/githubbranch.png)
+    ![Select Branch](./assets/githubbranch.png)
 
 1. Keep everything else default and select `Save`
 
-    ![Save](/assets/githubsave.png)
+    ![Save](./assets/githubsave.png)
 
 1. Click `Refresh` to update the deployment status
 
-    ![Refresh](/assets/githubrefresh.png)
+    ![Refresh](./assets/githubrefresh.png)
 
 1. Verify that the deployment is complete
 
-    ![Deploy done](/assets/deploydone.png)
+    ![Deploy done](./assets/deploydone.png)
 
 ### Create the Power Platform Connector
 
