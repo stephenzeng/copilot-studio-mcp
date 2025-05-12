@@ -2,11 +2,12 @@
 
 name: mcp-streamable-http
 metadata:
-    template: azd-init@1.15.1
+  template: azd-init@1.15.1
 services:
-    mcp-streamable-http:
-        project: .
-        host: containerapp
-        language: js
-        docker:
-            path: DOCKERFILE
+  mcp-streamable-http:
+    project: .
+    host: containerapp
+    language: js
+    docker:
+      path: Dockerfile
+      context: .
