@@ -4,7 +4,7 @@ This repository will contain MCP Samples that work with Microsoft Copilot Studio
 
 ## 👨‍💻 Samples
 
-The samples can be found in the [samples directory](./samples/README.md) in this repository.
+The samples can be found in the [samples directory](./samples/) in this repository.
 
 ## 🚀 Contributing
 
