@@ -6,3 +6,4 @@ This folder contains all the samples in this repository.
 
 - [Jokes MCP Server Sample (SSE version)](./jokesmcp-sse-typescript/)
 - [Jokes MCP Server Sample (Streamable HTTP version))](./jokesmcp-http-typescript/)
+- [Employee Vacations MCP Server Sample (Streamable HTTP version)](./employeevacations-http-typescript/)
