@@ -18,9 +18,9 @@ This MCP Server has multiple tools available:
 
 ## 🚀 Minimal path to awesome
 
-1. Clone this repository by running `git clone https://github.com/Laskewitz/MCP-Streamable-HTTP.git` in your terminal
-1. Open Visual Studio Code and open the cloned folder
-1. Open the terminal and navigate to the cloned folder
+1. Clone this repository
+1. Open Visual Studio Code and open the sample folder
+1. Open the terminal and navigate to the sample folder
 1. Run `npm install`
 1. Run `npm run build && npm run start`
 
