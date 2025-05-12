@@ -1,6 +1,8 @@
 # 😁 Jokes MCP Server Sample (Streamable HTTP version)
 
-Welcome to the Jokes MCP Server. This server has multiple tools available:
+Welcome to the **Jokes MCP Server Sample (Streamable HTTP version)**. In this sample, you will learn how to deploy the MCP Server to Azure or run it locally, and then add it to Microsoft Copilot Studio.
+
+This MCP Server has multiple tools available:
 
 - `get-chuck-joke` | Get a random Chuck Norris joke
 - `get-chuck-joke-by-category` | Get a random Chuck Norris joke by category
