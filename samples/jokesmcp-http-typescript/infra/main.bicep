@@ -9,7 +9,7 @@ param environmentName string
 @description('Primary location for all resources')
 param location string
 
-param mcpStreamableHttpExists bool
+param jokesmcpHttpTypescriptExists bool
 
 @description('Id of the user or app to assign application roles')
 param principalId string
@@ -37,8 +37,8 @@ module resources 'resources.bicep' = {
     location: location
     tags: tags
     principalId: principalId
-    mcpStreamableHttpExists: mcpStreamableHttpExists
+    jokesmcpHttpTypescriptExists: jokesmcpHttpTypescriptExists
   }
 }
 output AZURE_CONTAINER_REGISTRY_ENDPOINT string = resources.outputs.AZURE_CONTAINER_REGISTRY_ENDPOINT
-output AZURE_RESOURCE_MCP_STREAMABLE_HTTP_ID string = resources.outputs.AZURE_RESOURCE_MCP_STREAMABLE_HTTP_ID
+output AZURE_RESOURCE_JOKESMCP_HTTP_TYPESCRIPT_ID string = resources.outputs.AZURE_RESOURCE_JOKESMCP_HTTP_TYPESCRIPT_ID

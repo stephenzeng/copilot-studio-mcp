@@ -5,7 +5,7 @@ param location string = resourceGroup().location
 param tags object = {}
 
 
-param mcpStreamableHttpExists bool
+param jokesmcpHttpTypescriptExists bool
 
 @description('Id of the user or app to assign application roles')
 param principalId string
@@ -34,7 +34,7 @@ module containerRegistry 'br/public:avm/res/container-registry/registry:0.1.1' =
     publicNetworkAccess: 'Enabled'
     roleAssignments:[
       {
-        principalId: mcpStreamableHttpIdentity.outputs.principalId
+        principalId: jokesmcpHttpTypescriptIdentity.outputs.principalId
         principalType: 'ServicePrincipal'
         roleDefinitionIdOrName: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '7f951dda-4ed3-4680-a7ca-43fe172d538d')
       }
@@ -53,25 +53,25 @@ module containerAppsEnvironment 'br/public:avm/res/app/managed-environment:0.4.5
   }
 }
 
-module mcpStreamableHttpIdentity 'br/public:avm/res/managed-identity/user-assigned-identity:0.2.1' = {
-  name: 'mcpStreamableHttpidentity'
+module jokesmcpHttpTypescriptIdentity 'br/public:avm/res/managed-identity/user-assigned-identity:0.2.1' = {
+  name: 'jokesmcpHttpTypescriptidentity'
   params: {
-    name: '${abbrs.managedIdentityUserAssignedIdentities}mcpStreamableHttp-${resourceToken}'
+    name: '${abbrs.managedIdentityUserAssignedIdentities}jokesmcpHttpTypescript-${resourceToken}'
     location: location
   }
 }
-module mcpStreamableHttpFetchLatestImage './modules/fetch-container-image.bicep' = {
-  name: 'mcpStreamableHttp-fetch-image'
+module jokesmcpHttpTypescriptFetchLatestImage './modules/fetch-container-image.bicep' = {
+  name: 'jokesmcpHttpTypescript-fetch-image'
   params: {
-    exists: mcpStreamableHttpExists
-    name: 'mcp-streamable-http'
+    exists: jokesmcpHttpTypescriptExists
+    name: 'jokesmcp-http-typescript'
   }
 }
 
-module mcpStreamableHttp 'br/public:avm/res/app/container-app:0.8.0' = {
-  name: 'mcpStreamableHttp'
+module jokesmcpHttpTypescript 'br/public:avm/res/app/container-app:0.8.0' = {
+  name: 'jokesmcpHttpTypescript'
   params: {
-    name: 'mcp-streamable-http'
+    name: 'jokesmcp-http-typescript'
     ingressTargetPort: 3000
     scaleMinReplicas: 1
     scaleMaxReplicas: 10
@@ -81,7 +81,7 @@ module mcpStreamableHttp 'br/public:avm/res/app/container-app:0.8.0' = {
     }
     containers: [
       {
-        image: mcpStreamableHttpFetchLatestImage.outputs.?containers[?0].?image ?? 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
+        image: jokesmcpHttpTypescriptFetchLatestImage.outputs.?containers[?0].?image ?? 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
         name: 'main'
         resources: {
           cpu: json('0.5')
@@ -94,7 +94,7 @@ module mcpStreamableHttp 'br/public:avm/res/app/container-app:0.8.0' = {
           }
           {
             name: 'AZURE_CLIENT_ID'
-            value: mcpStreamableHttpIdentity.outputs.clientId
+            value: jokesmcpHttpTypescriptIdentity.outputs.clientId
           }
           {
             name: 'PORT'
@@ -105,18 +105,18 @@ module mcpStreamableHttp 'br/public:avm/res/app/container-app:0.8.0' = {
     ]
     managedIdentities:{
       systemAssigned: false
-      userAssignedResourceIds: [mcpStreamableHttpIdentity.outputs.resourceId]
+      userAssignedResourceIds: [jokesmcpHttpTypescriptIdentity.outputs.resourceId]
     }
     registries:[
       {
         server: containerRegistry.outputs.loginServer
-        identity: mcpStreamableHttpIdentity.outputs.resourceId
+        identity: jokesmcpHttpTypescriptIdentity.outputs.resourceId
       }
     ]
     environmentResourceId: containerAppsEnvironment.outputs.resourceId
     location: location
-    tags: union(tags, { 'azd-service-name': 'mcp-streamable-http' })
+    tags: union(tags, { 'azd-service-name': 'jokesmcp-http-typescript' })
   }
 }
 output AZURE_CONTAINER_REGISTRY_ENDPOINT string = containerRegistry.outputs.loginServer
-output AZURE_RESOURCE_MCP_STREAMABLE_HTTP_ID string = mcpStreamableHttp.outputs.resourceId
+output AZURE_RESOURCE_JOKESMCP_HTTP_TYPESCRIPT_ID string = jokesmcpHttpTypescript.outputs.resourceId

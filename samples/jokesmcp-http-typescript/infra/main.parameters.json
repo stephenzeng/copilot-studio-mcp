@@ -8,8 +8,8 @@
       "location": {
         "value": "${AZURE_LOCATION}"
       },
-      "mcpStreamableHttpExists": {
-        "value": "${SERVICE_MCP_STREAMABLE_HTTP_RESOURCE_EXISTS=false}"
+      "jokesmcpHttpTypescriptExists": {
+        "value": "${SERVICE_JOKESMCP_HTTP_TYPESCRIPT_RESOURCE_EXISTS=false}"
       },
       "principalId": {
         "value": "${AZURE_PRINCIPAL_ID}"

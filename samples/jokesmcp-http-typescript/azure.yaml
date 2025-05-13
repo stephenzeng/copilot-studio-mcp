@@ -4,7 +4,7 @@ name: jokesmcp-http-typescript
 metadata:
   template: azd-init@1.15.1
 services:
-  mcp-streamable-http:
+  jokesmcp-http-typescript:
     project: .
     host: containerapp
     language: js
