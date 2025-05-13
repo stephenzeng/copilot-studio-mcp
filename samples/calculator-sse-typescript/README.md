@@ -3,6 +3,11 @@
 This is a demo Node.js + TypeScript MCP SDK using [Model Context Protocol SDK](https://www.npmjs.com/package/@modelcontextprotocol/sdk). It exposes simple calculation tools like BMI and addition through MCP, and supports real-time responses via Server-Sent Events (SSE).
 Explore the MCP architecture and best practices using the [MCP Architecture](https://modelcontextprotocol.io/docs/concepts/architecture) and SSE transport.
 
+This MCP Server has multiple tools available:
+
+calculate-bmi | Calculates your BMI based on weight in kg and height in m
+calculate-sum | Calculated the sum of two input numbers (a an b)
+
 ## ⚙️ Prerequisites
 
 - Visual Studio Code ([link](https://code.visualstudio.com/download))
@@ -17,56 +22,6 @@ Explore the MCP architecture and best practices using the [MCP Architecture](htt
 1. Run `npm run build && npm run start`
 
 The app will run at <http://localhost:3001> (unless configured otherwise).
-
-## 🧪 MCP Tools
-
-### 🔹 calculate-bmi
-
-Input:
-
-```json
-{
-  "weightKg": 70,
-  "heightM": 1.75
-}
-```
-
-Response:
-
-```json
-{
-  "content": [{ "type": "text", "text": "22.86" }]
-}
-```
-
-### 🔹 calculate-sum
-
-Input
-
-```json
-{
-  "a": 5,
-  "b": 3
-}
-```
-
-Response:
-
-```json
-{
-  "content": [{ "type": "text", "text": "8" }]
-}
-```
-
-## 🔁 SSE Endpoint
-
-The server supports Server-Sent Events (SSE) via:
-
-```bash
-GET /sse
-```
-
----
 
 ## 👨‍💻 Use the Employee Vacations MCP Server in Visual Studio Code / GitHub Copilot
 
