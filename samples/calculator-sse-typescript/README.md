@@ -5,8 +5,8 @@ Explore the MCP architecture and best practices using the [MCP Architecture](htt
 
 This MCP Server has multiple tools available:
 
-calculate-bmi | Calculates your BMI based on weight in kg and height in m
-calculate-sum | Calculated the sum of two input numbers (a an b)
+- `calculate-bmi` | Calculates your BMI based on weight in kg and height in m
+- `calculate-sum` | Calculated the sum of two input numbers (a an b)
 
 ## ⚙️ Prerequisites
 
