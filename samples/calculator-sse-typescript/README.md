@@ -1,29 +1,20 @@
-# 🧮 Step by step Implementation of MCP Server and Integration into Microsoft Copilot Studio and Github Copilot Agent
+# 🧮 Calculator (SSE Version) - TypeScript
 
 This is a demo Node.js + TypeScript MCP SDK using [Model Context Protocol SDK](https://www.npmjs.com/package/@modelcontextprotocol/sdk). It exposes simple calculation tools like BMI and addition through MCP, and supports real-time responses via Server-Sent Events (SSE).
 Explore the MCP architecture and best practices using the [MCP Architecture](https://modelcontextprotocol.io/docs/concepts/architecture) and SSE transport.
 
+## ⚙️ Prerequisites
 
-## 🚀 Features
+- Visual Studio Code ([link](https://code.visualstudio.com/download))
+- Node v22 (ideally installed via [nvm for Windows](https://github.com/coreybutler/nvm-windows))
 
-- ✅ **SSE (Server-Sent Events) Support**
-- ✅ **BMI Calculator Tool**
-- ✅ **Addition Tool**
-- ✅ **MCP Tool + Github Copilot Agent Integration**
-- ✅ **MCP Tool + Microsoft Copilot Studio Integration**
-- ✅ **Azure App Service Ready**
+## 🚀 Minimal path to awesome
 
-## 📁 Project Structure
-
-<p align="left"> <img src="https://github.com/user-attachments/assets/8cb871fd-bc53-4dcb-a946-916be2ea8286" width="200"/> </p>
-
-## ⚙️Quick Start
-
-```bash
-npm install      # Install dependencies
-npm run build    # Compile TypeScript
-npm run start    # Start server (http://localhost:3001)
-```
+1. Clone this repository by running `git clone https://github.com/microsoft/copilot-studio-mcp/` in your terminal
+1. Open Visual Studio Code on the subfolder `samples/calculator-sse-typescript`
+1. Open the terminal and navigate to the same folder
+1. Run `npm install`
+1. Run `npm run build && npm run start`
 
 The app will run at <http://localhost:3001> (unless configured otherwise).
 
@@ -77,7 +68,7 @@ GET /sse
 
 ---
 
-## 🖥️ **MCP Tool + Github Copilot Agent Integration (VSCode)**
+## 👨‍💻 Use the Employee Vacations MCP Server in Visual Studio Code / GitHub Copilot
 
 1. Open the **Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 2. Type **"Add MCP Server"** and select it.
@@ -100,17 +91,17 @@ GET /sse
 <p align="left"> <img src="https://github.com/user-attachments/assets/e4c0977c-a388-42cb-8f98-9f6cb84d3978" width="400"/> </p>
 The server appears and is connected successfully.
 
-## 🖥️ **MCP Tool + Microsoft Copilot Studio Integration (Custom Connector)**
+## 👨‍💻 Use the Employee Vacations MCP Server in Microsoft Copilot Studio
 
-For details on integrating Model Context Protocol (MCP) tools into Microsoft Copilot Studio using custom connectors, check out the official Microsoft documentation: 🔗 [Extend Copilot actions using MCP in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp)
+For details on integrating Model Context Protocol (MCP) tools into Microsoft Copilot Studio using custom connectors, check out the official Microsoft documentation: 🔗 [Extend Copilot actions using MCP in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/agent-extend-action-mcp)
 
-# MCP Custom connector Copilot Studio Integration
+### MCP Custom connector Copilot Studio Integration
 
 It shows how to set up the MCP Tools for actions to work with custom connectors in **Copilot Studio**.
 
 ---
 
-## Swagger Specification
+### Swagger Specification
 
 ```yaml
 swagger: '2.0'
@@ -166,9 +157,9 @@ security: []
 ```
 ![image](https://github.com/user-attachments/assets/7727d5b9-f4c8-44bd-8293-aa4bd7957133)
 
-# Using MCP Server Action in Copilot Studio
+### Using MCP Server Action in Copilot Studio
 
-## Steps to Access the MCP Server Action
+#### Steps to Access the MCP Server Action
 
 1. **Open Copilot Studio**  
    Navigate to your [Copilot Studio](https://copilotstudio.microsoft.com) workspace.
