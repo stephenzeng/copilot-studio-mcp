@@ -62,7 +62,7 @@ To use the Employee Vacations MCP Server, you need to use the URL of your server
 1. Select `HTTP (HTTP or Server-Sent Events)`
 1. Paste the URL of your server in the input box (make sure `/mcp` in the end is included)
 1. Press `Enter`
-1. Enter a name for the server, for instance `JokesMCP`
+1. Enter a name for the server, for instance `EmployeesVacationMCP`
 1. Select `User Settings` to save the MCP Server settings in your user settings
 1. Open `GitHub Copilot`
 1. Switch from `Ask` to `Agent`
