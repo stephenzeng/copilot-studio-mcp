@@ -210,7 +210,7 @@ Now you have added the `EventsMCP` server to Visual Studio Code!
 
 1. Change the **Connector Name** to something appropriate, like for instance `Events MCP` 
 1. Change the **Description** to something appropriate
-1. Paste your root URL (for instance `https://something-3000.something.devtunnels.ms`) in the **Host** field 
+1. Paste your root URL (for instance `something-3000.something.devtunnels.ms`) in the **Host** field 
 1. Select **Create connector** 
 
     You may see a warning and an error upon creation – it should be resolved soon - but you can ignore it for now.
