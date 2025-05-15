@@ -9,3 +9,4 @@ This folder contains all the samples in this repository.
 - [Employee Vacations MCP Server Sample (Streamable HTTP version) - TypeScript](./employeevacations-http-typescript/)
 - [Jokes MCP Server Sample (SSE version) - TypeScript](./jokesmcp-sse-typescript/)
 - [Jokes MCP Server Sample (Streamable HTTP version) - TypeScript](./jokesmcp-http-typescript/)
+- [Events Management MCP Server Sample (Streamable HTTP version) - TypeScript](./events-http-typescript/)
