@@ -1,0 +1,36 @@
+@server = http://localhost:3000
+
+### Event endpoints
+
+# GET /events
+GET {{server}}/event
+
+###
+
+# GET /sessions
+GET {{server}}/sessions
+
+###
+
+# GET /events/{eventId}/sessions
+GET {{server}}/events/c1a1e2b0-1f2a-4e3b-9a1b-000000000001/sessions
+
+###
+
+# GET /speakers
+GET {{server}}/speakers
+
+###
+
+# GET /events/{eventId}/speakers
+GET {{server}}/events/c1a1e2b0-1f2a-4e3b-9a1b-000000000001/speakers
+
+###
+
+# GET /sponsors
+GET {{server}}/sponsors
+
+###
+
+# GET /events/{eventId}/sponsors
+GET {{server}}/events/c1a1e2b0-1f2a-4e3b-9a1b-000000000001/sponsors
