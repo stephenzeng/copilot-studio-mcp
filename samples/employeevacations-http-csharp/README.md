@@ -75,3 +75,5 @@ This should give you a response like this:
 ![Screenshot of question to provide the list of the employees and the answer from GitHub Copilot](./assets/github-copilot-get-employees.png)
 
 Now you have added the `EmployeesVacationMCP` server to Visual Studio Code!
+
+![🌴 Employee Vacations MCP Server Sample (Streamable HTTP version) - C#](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/employeevacations-http-csharp)
