@@ -103,4 +103,4 @@ This should give you a response like this:
 
 Now you have added the `JokesMCP` server to Visual Studio Code!
 
-![😁 Jokes MCP Server Sample (Streamable HTTP version)](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/jokesmcp-http-typescript)
+![😁 Jokes MCP Server Sample (Streamable HTTP version)](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/jokesmcp-http-typescript&dot=)

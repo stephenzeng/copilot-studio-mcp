@@ -251,6 +251,6 @@ In no event shall the authors or copyright holders be liable for any **claims**,
 > This is a sample demo **custom MCP server** created for **demonstration purposes**. It is deployed into **Microsoft Azure** and intended solely for **integration with Copilot Studio** during prototyping or sample scenarios.  
 > This component is **not part of any official Microsoft product** and is **not available for production use**.
 
-![🧮 Calculator (SSE Version) - TypeScript](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/calculator-sse-typescript)
+![🧮 Calculator (SSE Version) - TypeScript](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/calculator-sse-typescript&dot=)
 
 

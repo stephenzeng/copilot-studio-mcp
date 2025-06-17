@@ -220,4 +220,4 @@ Now you have added the `EventsMCP` server to Visual Studio Code!
 1. Create your agent 
 1. Select **Tools** > **Add a tool** > **Model Context Protocol** > And then select the MCP server you’ve just created
 
-![🏬 Events Management Server Sample](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/events-http-typescript)
+![🏬 Events Management Server Sample](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/events-http-typescript&dot=)

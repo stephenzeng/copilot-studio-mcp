@@ -76,4 +76,4 @@ This should give you a response like this:
 
 Now you have added the `EmployeesVacationMCP` server to Visual Studio Code!
 
-![🌴 Employee Vacations MCP Server Sample (Streamable HTTP version) - C#](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/employeevacations-http-csharp)
+![🌴 Employee Vacations MCP Server Sample (Streamable HTTP version) - C#](https://m365-visitor-stats.azurewebsites.net/?resource=https://github.com/microsoft/copilot-studio-mcp/tree/main/samples/employeevacations-http-csharp&dot=)
