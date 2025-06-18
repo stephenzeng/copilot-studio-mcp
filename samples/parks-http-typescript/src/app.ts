@@ -5,9 +5,6 @@ import { z } from 'zod';
 import { ActivitiesService } from './services/activitiesService';
 import { ParksService } from './services/parksService';
 
-require('dotenv').config();
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0" // Disable TLS certificate validation for local development 
 
 const server = new McpServer({
   name: "mcp-streamable-http",
@@ -33,10 +30,11 @@ server.tool(
 server.tool(
   "getParks",
   "Get the list of parks",
-  {},
-  async () => {
-    console.log("Received request to get parks with apiKey " + myApiKey);
-    const response = await parkService.getParks(myApiKey);
+  {
+    stateCode: z.string().describe("The US state to filter parks by, e.g., 'CA' for California"),
+  },
+  async ({stateCode}) => {
+    const response = await parkService.getParks(myApiKey, { stateCode: stateCode });
     return {
       content: [{ type: "text", text: JSON.stringify(response) }]
     };
