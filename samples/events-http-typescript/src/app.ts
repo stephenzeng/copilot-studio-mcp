@@ -3,6 +3,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { z } from 'zod';
 import { EventInfrastructureService } from './services/eventInfrastructureService';
+import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
 
 require('dotenv').config();
 
@@ -76,6 +77,8 @@ server.tool(
 const app = express();
 app.use(express.json());
 
+const transports: Record<string, StreamableHTTPServerTransport | SSEServerTransport> = {};
+
 const transport: StreamableHTTPServerTransport =
   new StreamableHTTPServerTransport({
     sessionIdGenerator: undefined, // set to undefined for stateless servers
@@ -85,6 +88,7 @@ const setupServer = async () => {
   await server.connect(transport);
   await eventInfrastructureService.createContainersIfNotExist();
 };
+
 
 // CLI command support
 if (process.argv[2] === "importEvents") {
@@ -175,7 +179,7 @@ app.delete("/mcp", async (req: Request, res: Response) => {
   console.log("Received DELETE MCP request");
   res.writeHead(405).end(
     JSON.stringify({
-      jsonrpc: "2.0",
+      jsonrpc: "2.0", 
       error: {
         code: -32000,
         message: "Method not allowed.",
