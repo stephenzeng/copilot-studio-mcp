@@ -1,4 +1,4 @@
-# 🏬 Events Management Server Sample
+# 🌳🌲Parks Server Sample
 
 Welcome to the **Parks Server Sample**. In this sample, you will learn how to run the MCP Server locally, and then add it to Microsoft Copilot Studio.
 This sample exposes the [NPS APIs](https://www.nps.gov/subjects/developer/api-documentation.htm) as MCP tools and it's used to demonstrate how you can setup an MCP server that connects to an API which requires authentication using the API key method.
