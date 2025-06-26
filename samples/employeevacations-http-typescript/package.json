@@ -1,5 +1,6 @@
 {
   "name": "employee-vacations-mcp-http",
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

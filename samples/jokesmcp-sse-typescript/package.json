@@ -1,5 +1,6 @@
 {
   "name": "jokes-sse",
+  "private": true,
   "version": "1.0.0",
   "description": "Jokes MCP with SSE",
   "type": "module",

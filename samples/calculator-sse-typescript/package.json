@@ -1,5 +1,6 @@
 {
   "name": "calculator-sse",
+  "private": true,
   "version": "1.0.0",
   "description": "Calculator demo with SSE",
   "type": "module",
